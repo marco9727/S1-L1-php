@@ -15,8 +15,8 @@
 
 //Qui definiamo un array associativo che mappa i numeri dei mesi ai loro
 // nomi in italiano.
-        $mesi = array(
-            1 => "Gennaio",
+        $mesi = 
+          [  1 => "Gennaio",
             2 => "Febbraio",
             3 => "Marzo",
             4 => "Aprile",
@@ -28,7 +28,7 @@
             10 => "Ottobre",
             11 => "Novembre",
             12 => "Dicembre"
-        );
+];
 //La funzione getdate() restituisce un array associativo contenente 
 //informazioni sulla data e l'ora corrente.
         $data_odierna = getdate();
