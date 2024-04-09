@@ -12,6 +12,9 @@
         <?php
         date_default_timezone_set('Europe/Rome');
 
+
+//Qui definiamo un array associativo che mappa i numeri dei mesi ai loro
+// nomi in italiano.
         $mesi = array(
             1 => "Gennaio",
             2 => "Febbraio",
@@ -26,13 +29,17 @@
             11 => "Novembre",
             12 => "Dicembre"
         );
-
+//La funzione getdate() restituisce un array associativo contenente 
+//informazioni sulla data e l'ora corrente.
         $data_odierna = getdate();
-
+//Estraiamo il giorno (mday), il mese (mon) e l'anno (year) dall'array 
+//restituito da getdate(). Per il mese, utilizziamo l'array $mesi definito 
+//in precedenza per ottenere il nome del mese corrispondente al numero del 
+//mese.
         $giorno = $data_odierna['mday'];
         $mese = $mesi[$data_odierna['mon']];
         $anno = $data_odierna['year'];
-
+//echo sarebbe il console log in js 
         echo "Oggi è il $giorno $mese $anno";
         ?>
     </p>
